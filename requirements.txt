@@ -11,3 +11,4 @@ lxml==4.2.5
 isodate==0.6.0
 pipenv==2018.11.26
 xlrd==1.1.0
+flatten-json==0.1.7
