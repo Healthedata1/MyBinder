@@ -1,0 +1,191 @@
+{
+    "id": "carin-bb-capabilitystatement-consumer-app",
+    "meta": {
+        "lastUpdated": "2020-02-25"
+    },
+    "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2 id=\"title\">CARIN BlueButton Consumer App CapabilityStatement</h2><ul><li>Implementation Guide Version: 0.1.0</li><li>FHIR Version: 4.0.0</li><li>Supported formats: xml, json</li><li>Published: 2019-12-04T05:00:00+00:00</li><li>Published by: CARIN Alliance</li></ul><p><p>The Section describes the expected capabilities of the Consumer-Directed Payer Data Exchange Consumer App which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Consumer-Directed Payer Data Exchange Servers are defined in the <a href=\"carin-bb-capabilitystatement-healthplan-api.html\">Conformance Requirements for Server</a>. Consumer-Directed Payer Data Exchange Consumer Apps have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p></p><h3 id=\"behavior\">FHIR RESTful Capabilities</h3><p>The Consumer-Directed Payer Data Exchange Consumer App <strong>SHALL</strong>:</p><ol><li>Support fetching and querying of one or more CARIN Blue Button profile(s), using the supported RESTful interactions and search parameters declared in the Consumer-Directed Payer Data Exchange Server CapabilityStatement</li></ol><p id=\"security\"><strong>Security:</strong></p><ol><li>See the [Authorization, Authentication, and Registrations] section for requirements and recommendations.</li></ol><p><strong>Summary of System Wide Interactions</strong></p><li><strong>undefined</strong> support the\t<code>search-system</code> interaction.</li><h3 class=\"no_toc\" id=\"resource--details\">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class=\"grid\"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href=\"#patient\">Patient</a></td><td>\n\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n              \n            </td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr><tr><td><a href=\"#coverage\">Coverage</a></td><td>\n\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tpatient\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n              \n            </td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr><tr><td><a href=\"#explanationofbenefit\">ExplanationOfBenefit</a></td><td>\n\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tpatient, created\n\t\t\t\t\t\t\tpatient+created\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n              \n            </td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr><tr><td><a href=\"#relatedperson\">RelatedPerson</a></td><td>\n\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n              \n            </td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr><tr><td><a href=\"#practitionerrole\">PractitionerRole</a></td><td>\n\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n              \n            </td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr><tr><td><a href=\"#organization\">Organization</a></td><td>\n\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n              \n            </td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td></tr><tr><td><a href=\"#valueset\">ValueSet</a></td><td>\n\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</td><td>\n              \n            </td><td>\n\t\t\t\t\t\t\texpand\n\t\t\t\t\t\t</td></tr></tbody></table><br></br><h4 class=\"no_toc\" id=\"patient\">Patient</h4><p>Conformance Expectation:\t<strong>undefined</strong></p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\n\t\t\t\t</ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA Client <strong>undefined</strong> be capable of fetching a Patient resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/Patient/[id]</code>\n\t\t\t\t</li><br></br><!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr></hr><h4 class=\"no_toc\" id=\"coverage\">Coverage</h4><p>Conformance Expectation:\t<strong>undefined</strong></p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\n\t\t\t\t</ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA Client <strong>undefined</strong> be capable of fetching a Coverage resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/Coverage/[id]</code>\n\t\t\t\t</li><br></br><!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>undefined</strong></td><td><a href=\"SearchParameter-carin-bb-searchparameter-coverage-patient.html\">patient</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/Coverage?patient=[patient]</code></td></tr></tbody></table><hr></hr><h4 class=\"no_toc\" id=\"explanationofbenefit\">ExplanationOfBenefit</h4><p>Conformance Expectation:\t<strong>None</strong></p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\n\t\t\t\t</ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA Client <strong>undefined</strong> be capable of fetching a ExplanationOfBenefit resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit/[id]</code>\n\t\t\t\t</li><br></br><!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><p>Search Parameter Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>undefined</strong></td><td><a href=\"SearchParameter-carin-bb-searchparameter-explanationofbenefit-patient.html\">patient</a></td><td>\n\t\t\t\t\t\t\treference\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?patient=[patient]</code></td></tr><tr><td><strong>undefined</strong></td><td><a href=\"SearchParameter-carin-bb-searchparameter-explanationofbenefit-patient.html\">created</a></td><td>\n\t\t\t\t\t\t\tdate\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?created=[created]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class=\"grid\"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td>patient+created\n\t\t\t\t\t\t</td><td>reference+\n\t\t\t\t\t\t</td><td><code class=\"highlighter-rouge\">GET [base]/ExplanationOfBenefit?patient=[patient]&amp;created=[created]</code></td></tr></tbody></table><hr></hr><h4 class=\"no_toc\" id=\"relatedperson\">RelatedPerson</h4><p>Conformance Expectation:\t<strong>undefined</strong></p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\n\t\t\t\t</ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA Client <strong>undefined</strong> be capable of fetching a RelatedPerson resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/RelatedPerson/[id]</code>\n\t\t\t\t</li><br></br><!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr></hr><h4 class=\"no_toc\" id=\"practitionerrole\">PractitionerRole</h4><p>Conformance Expectation:\t<strong>undefined</strong></p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\n\t\t\t\t</ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA Client <strong>undefined</strong> be capable of fetching a PractitionerRole resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/PractitionerRole/[id]</code>\n\t\t\t\t</li><br></br><!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr></hr><h4 class=\"no_toc\" id=\"organization\">Organization</h4><p>Conformance Expectation:\t<strong>undefined</strong></p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\n\t\t\t\t</ul><p>Fetch and Search Criteria:</p><ul><li>\n\t\t\t\t\tA Client <strong>undefined</strong> be capable of fetching a Organization resource using:\n\t\t\t\t\t<br></br>\n\t\t\t\t\t\t<code class=\"highlighter-rouge\">GET [base]/Organization/[id]</code>\n\t\t\t\t</li><br></br><!-- Only SHOULDs for include for now the capability statement does not create the primitive extensios for this yet --><!-- Only SHALLs for revinclude for now the capability statement does not create the primitive extensios for this yet --></ul><hr></hr><h4 class=\"no_toc\" id=\"valueset\">ValueSet</h4><p>Conformance Expectation:\t<strong>undefined</strong></p><p>Operation  Summary:</p><ul><li><strong>undefined</strong> support the \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"http://hl7.org/fhir/OperationDefinition/ValueSet-expand\">$expand</a> operation\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p><p>A  client can determine the note and report types support by a server by invoking the standard FHIR Value Set Expansion ($expand) operation defined in the FHIR R4 specification. Because servers may support different read and write formats, it also is used to determine the formats (for example, text, pdf) the server supports read and write transactions.</p></p></li></ul><hr></hr><br></br></div>",
+        "status": "generated"
+    },
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "https://www.carinalliance.com/about-us/contact-us"
+                }
+            ]
+        }
+    ],
+    "date": "2019-12-04T05:00:00+00:00",
+    "description": "The Section describes the expected capabilities of the Consumer-Directed Payer Data Exchange Consumer App which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by Consumer-Directed Payer Data Exchange Servers are defined in the [Conformance Requirements for Server](carin-bb-capabilitystatement-healthplan-api.html). Consumer-Directed Payer Data Exchange Consumer Apps have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
+    "experimental": false,
+    "fhirVersion": "4.0.0",
+    "format": [
+        "xml",
+        "json"
+    ],
+    "implementationGuide": [
+        "http://hl7.org/fhir/us/carin-bb/ImplementationGuide/carin-bb"
+    ],
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "code": "US",
+                    "system": "urn:iso:std:iso:3166"
+                }
+            ]
+        }
+    ],
+    "kind": "requirements",
+    "name": "CARIN_BlueButton_Consumer_App_CapabilityStatement",
+    "publisher": "CARIN Alliance",
+    "rest": [
+        {
+            "documentation": "The Consumer-Directed Payer Data Exchange Consumer App **SHALL**:\n\n1. Support fetching and querying of one or more CARIN Blue Button profile(s), using the supported RESTful interactions and search parameters declared in the Consumer-Directed Payer Data Exchange Server CapabilityStatement",
+            "interaction": [
+                {
+                    "code": "search-system"
+                }
+            ],
+            "mode": "client",
+            "resource": [
+                {
+                    "interaction": [
+                        {
+                            "code": "read"
+                        }
+                    ],
+                    "profile": "http://hl7.org/fhir/us/carin/StructureDefinition/carin-bb-patient",
+                    "referencePolicy": [
+                        "resolves"
+                    ],
+                    "type": "Patient"
+                },
+                {
+                    "interaction": [
+                        {
+                            "code": "search-type"
+                        },
+                        {
+                            "code": "read"
+                        }
+                    ],
+                    "profile": "http://hl7.org/fhir/us/carin/StructureDefinition/carin-bb-coverage",
+                    "referencePolicy": [
+                        "resolves"
+                    ],
+                    "searchParam": [
+                        {
+                            "definition": "http://hl7.org/fhir/us/carin/SearchParameter/carin-bb-searchparameter-coverage-patient",
+                            "name": "patient",
+                            "type": "reference"
+                        }
+                    ],
+                    "type": "Coverage"
+                },
+                {
+                    "extension": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHOULD"
+                                },
+                                {
+                                    "url": "required",
+                                    "valueString": "patient"
+                                },
+                                {
+                                    "url": "optional",
+                                    "valueString": "created"
+                                }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                        }
+                    ],
+                    "interaction": [
+                        {
+                            "code": "search-type"
+                        },
+                        {
+                            "code": "read"
+                        }
+                    ],
+                    "profile": "http://hl7.org/fhir/us/carin/StructureDefinition/carin-bb-explanationofbenefit",
+                    "referencePolicy": [
+                        "resolves"
+                    ],
+                    "searchParam": [
+                        {
+                            "definition": "http://hl7.org/fhir/us/carin/SearchParameter/carin-bb-searchparameter-explanationofbenefit-patient",
+                            "name": "patient",
+                            "type": "reference"
+                        },
+                        {
+                            "definition": "http://hl7.org/fhir/us/carin/SearchParameter/carin-bb-searchparameter-explanationofbenefit-patient",
+                            "name": "created",
+                            "type": "date"
+                        }
+                    ],
+                    "type": "ExplanationOfBenefit"
+                },
+                {
+                    "interaction": [
+                        {
+                            "code": "read"
+                        }
+                    ],
+                    "profile": "http://hl7.org/fhir/us/carin/StructureDefinition/carin-bb-relatedperson",
+                    "referencePolicy": [
+                        "resolves"
+                    ],
+                    "type": "RelatedPerson"
+                },
+                {
+                    "interaction": [
+                        {
+                            "code": "read"
+                        }
+                    ],
+                    "profile": "http://hl7.org/fhir/us/carin/StructureDefinition/carin-bb-practitionerrole",
+                    "referencePolicy": [
+                        "resolves"
+                    ],
+                    "type": "PractitionerRole"
+                },
+                {
+                    "interaction": [
+                        {
+                            "code": "read"
+                        }
+                    ],
+                    "profile": "http://hl7.org/fhir/us/carin/StructureDefinition/carin-bb-organization",
+                    "referencePolicy": [
+                        "resolves"
+                    ],
+                    "type": "Organization"
+                },
+                {
+                    "operation": [
+                        {
+                            "definition": "http://hl7.org/fhir/OperationDefinition/ValueSet-expand",
+                            "documentation": "A  client can determine the note and report types support by a server by invoking the standard FHIR Value Set Expansion ($expand) operation defined in the FHIR R4 specification. Because servers may support different read and write formats, it also is used to determine the formats (for example, text, pdf) the server supports read and write transactions.",
+                            "name": "expand"
+                        }
+                    ],
+                    "type": "ValueSet"
+                }
+            ],
+            "security": {
+                "description": "1. See the [Authorization, Authentication, and Registrations] section for requirements and recommendations."
+            }
+        }
+    ],
+    "status": "active",
+    "title": "CARIN BlueButton Consumer App CapabilityStatement",
+    "url": "http://hl7.org/fhir/us/carin/CapabilityStatement/carin-bb-capabilitystatement-consumer-app",
+    "version": "0.1.0",
+    "resourceType": "CapabilityStatement"
+}
