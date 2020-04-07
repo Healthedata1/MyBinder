@@ -1,0 +1,8 @@
+﻿collectiondate,State,County,newDiagnosticTests,cumulativeDiagnosticTests,newTestsResulted,cumulativeSpecimensRejected,cumulativeTestsPerformed,newPositiveC19Tests,cumulativePositiveC19Tests,newPercentPositive,cumulativePercentPositive
+4/4/20,CA,Marin,100,1000,80,45,800,8,80,0.1,0.1
+4/5/20,CA,Marin,100,1100,90,55,890,9,89,0.1,0.1
+4/6/20,CA,Marin,100,1200,100,65,990,9,98,0.09,0.098989899
+4/7/20,CA,Marin,100,1300,100,75,1090,11,109,0.11,0.1
+4/8/20,CA,Marin,100,1400,90,85,1180,10,119,0.111111111,0.100847458
+4/9/20,CA,Marin,100,1500,80,95,1260,10,129,0.125,0.102380952
+4/10/20,CA,Marin,100,1600,70,105,1330,8,137,0.114285714,0.103007519

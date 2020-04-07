@@ -1,0 +1,8 @@
+collectiondate,State,County,newDiagnosticTests,cumulativeDiagnosticTests,newTestsResulted,cumulativeSpecimensRejected,cumulativeTestsPerformed,newPositiveC19Tests,cumulativePositiveC19Tests,newPercentPositive,cumulativePercentPositive
+04/04/2020,,,100,1000,,45,,,,,
+04/05/2020,,,100,1100,,55,,,,,
+04/06/2020,,,100,1200,,65,,,,,
+04/07/2020,,,100,1300,,75,,,,,
+04/08/2020,,,100,1400,,85,,,,,
+04/09/2020,,,100,1500,,95,,,,,
+04/10/2020,,,100,1600,,105,,,,,

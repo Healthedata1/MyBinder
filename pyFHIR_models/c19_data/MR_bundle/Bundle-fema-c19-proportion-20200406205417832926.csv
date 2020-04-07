@@ -1,0 +1,8 @@
+collectiondate,State,County,newDiagnosticTests,cumulativeDiagnosticTests,newTestsResulted,cumulativeSpecimensRejected,cumulativeTestsPerformed,newPositiveC19Tests,cumulativePositiveC19Tests,newPercentPositive,cumulativePercentPositive,cumulativePositiveC19Tests.numerator,cumulativeTestsPerformed.denominator,cumulativeTestsPerformed.initial-population,newPositiveC19Tests.numerator,newTestsResulted.denominator,newTestsResulted.initial-population
+04/04/2020,,,,,,,,,,8.0,80.0,80.0,800.0,800.0,8.0,80.0,80.0
+04/05/2020,,,,,,,,,,9.0,89.0,89.0,890.0,890.0,9.0,90.0,90.0
+04/06/2020,,,,,,,,,,9.0,98.0,98.0,990.0,990.0,9.0,100.0,100.0
+04/07/2020,,,,,,,,,,11.0,109.0,109.0,1090.0,1090.0,11.0,100.0,100.0
+04/08/2020,,,,,,,,,,10.0,119.0,119.0,1180.0,1180.0,10.0,90.0,90.0
+04/09/2020,,,,,,,,,,10.0,129.0,129.0,1260.0,1260.0,10.0,80.0,80.0
+04/10/2020,,,,,,,,,,8.0,137.0,137.0,1330.0,1330.0,8.0,70.0,70.0
