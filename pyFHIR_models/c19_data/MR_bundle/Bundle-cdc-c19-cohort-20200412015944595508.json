@@ -1,0 +1,496 @@
+{
+    "resourceType": "Bundle",
+    "id": "cdc-c19-cohort-20200412015944595508",
+    "type": "transaction",
+    "timestamp": "2020-04-12T01:59:41.103496Z",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:47c487b6-7c61-11ea-b6d3-a4d18ccf5172",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "47c487b6-7c61-11ea-b6d3-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "urn:oid:1.3.6.1.5.5.7.0.64",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "http://cdcmeasures.example.org/cdc-covid",
+                "subject": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "date": "2020-04-12T01:59:41.103496Z",
+                "reporter": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "period": {
+                    "start": "2020-03-30",
+                    "end": "2020-03-30"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "MeasureReport"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:47ed78f6-7c61-11ea-b6d3-a4d18ccf5172",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "47ed78f6-7c61-11ea-b6d3-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "urn:oid:1.3.6.1.5.5.7.0.64",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "http://cdcmeasures.example.org/cdc-covid",
+                "subject": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "date": "2020-04-12T01:59:41.103496Z",
+                "reporter": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "period": {
+                    "start": "2020-03-31",
+                    "end": "2020-03-31"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "MeasureReport"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:481430cc-7c61-11ea-b6d3-a4d18ccf5172",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "481430cc-7c61-11ea-b6d3-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "urn:oid:1.3.6.1.5.5.7.0.64",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "http://cdcmeasures.example.org/cdc-covid",
+                "subject": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "date": "2020-04-12T01:59:41.103496Z",
+                "reporter": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "period": {
+                    "start": "2020-04-01",
+                    "end": "2020-04-01"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "MeasureReport"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:4841616e-7c61-11ea-b6d3-a4d18ccf5172",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "4841616e-7c61-11ea-b6d3-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "urn:oid:1.3.6.1.5.5.7.0.64",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "http://cdcmeasures.example.org/cdc-covid",
+                "subject": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "date": "2020-04-12T01:59:41.103496Z",
+                "reporter": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "period": {
+                    "start": "2020-04-02",
+                    "end": "2020-04-02"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "MeasureReport"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:486bae06-7c61-11ea-b6d3-a4d18ccf5172",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "486bae06-7c61-11ea-b6d3-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "urn:oid:1.3.6.1.5.5.7.0.64",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "http://cdcmeasures.example.org/cdc-covid",
+                "subject": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "date": "2020-04-12T01:59:41.103496Z",
+                "reporter": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "period": {
+                    "start": "2020-04-03",
+                    "end": "2020-04-03"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "MeasureReport"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:489607c8-7c61-11ea-b6d3-a4d18ccf5172",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "489607c8-7c61-11ea-b6d3-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "urn:oid:1.3.6.1.5.5.7.0.64",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "http://cdcmeasures.example.org/cdc-covid",
+                "subject": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "date": "2020-04-12T01:59:41.103496Z",
+                "reporter": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "period": {
+                    "start": "2020-04-04",
+                    "end": "2020-04-04"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "MeasureReport"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:48c3a2be-7c61-11ea-b6d3-a4d18ccf5172",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "48c3a2be-7c61-11ea-b6d3-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "urn:oid:1.3.6.1.5.5.7.0.64",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "http://cdcmeasures.example.org/cdc-covid",
+                "subject": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "date": "2020-04-12T01:59:41.103496Z",
+                "reporter": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "period": {
+                    "start": "2020-04-05",
+                    "end": "2020-04-05"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "MeasureReport"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:48f36a30-7c61-11ea-b6d3-a4d18ccf5172",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "48f36a30-7c61-11ea-b6d3-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "urn:oid:1.3.6.1.5.5.7.0.64",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "http://cdcmeasures.example.org/cdc-covid",
+                "subject": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "date": "2020-04-12T01:59:41.103496Z",
+                "reporter": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "period": {
+                    "start": "2020-04-06",
+                    "end": "2020-04-06"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "MeasureReport"
+            }
+        }
+    ]
+}
