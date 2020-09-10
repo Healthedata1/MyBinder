@@ -14,6 +14,9 @@ from datetime import datetime, date, timedelta
 import uuid
 import FHIR_templates as f
 from json import dumps
+from requests import get, put, post
+from IPython.display import display, HTML, Markdown
+
 
 
 def to_json(r):
@@ -50,6 +53,37 @@ def bundle_me(fhir_server, pyfhir_res, fhir_bundle=None):
 
 
 # In[43]:
+
+def validate_me(r_fhir): 
+    '''
+    input a fhir resource as dict and validate using a reference server
+    '''
+    
+    # ref_server = 'http://test.fhir.org/r4'
+    ref_server ='http://hapi.fhir.org/baseR4'
+    headers = {
+        'Accept':'application/fhir+json',
+        'Content-Type':'application/fhir+json'
+        }
+    params = dict(
+          )
+    print('validating ...')
+    r = post(f'{ref_server}/{r_fhir["resourceType"]}/$validate', params=params, headers=headers, data=dumps(r_fhir))
+    try:
+        display(HTML(
+            '<h1>Validation output</h1>'
+            f'<h3>Status Code = {r.status_code}</h3><br />'
+            f'<h4>Response</h4><br />'
+            f'{r.json()["text"]["div"]}'
+            ))
+
+    except KeyError:
+        display(HTML(
+            '<h1>Validation output</h1>'
+            f'<h3>Status Code = {r.status_code}</h3><br />'
+            f'<h4>Response</h4><br />'
+            f'<pre>{dumps(r.json(),indent=4)}</pre>'
+            ))  
 
 
 if __name__ == "__main__": 
