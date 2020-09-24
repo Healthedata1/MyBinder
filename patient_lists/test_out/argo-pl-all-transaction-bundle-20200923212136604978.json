@@ -1,0 +1,143 @@
+{
+  "resourceType": "Bundle",
+  "id": "transaction-bundle-20200923212136604978",
+  "type": "transaction",
+  "timestamp": "2020-09-23T14:21:36.605042Z",
+  "entry": [
+    {
+      "fullUrl": "http://test.fhir.org/r4/argo-pl-group-all-20200923212135189367",
+      "resource": {
+        "resourceType": "Group",
+        "id": "argo-pl-group-all-20200923212135189367",
+        "meta": {
+          "source": "Health_eData_Inc",
+          "tag": [
+            {
+              "code": "2020-Sep"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://example.org/fhir/identifiers",
+            "value": "argo-pl-group-all-20200923212135189367"
+          }
+        ],
+        "active": true,
+        "type": "person",
+        "actual": true,
+        "name": "Argo Patient List \"all\" Use Case",
+        "managingEntity": {
+          "reference": "Organization/b1ddf812-1fdd-3adf-b1d5-32cc8bd07ebb",
+          "display": "BETH ISRAEL DEACONESS HOSPITAL - PLYMOUTH"
+        },
+        "member": [
+          {
+            "entity": {
+              "reference": "Patient/b1cf5f57-b061-4b7f-aa9d-6283a121694b",
+              "display": "Mr. Garland107 Conn188"
+            },
+            "period": {
+              "start": "2020-09-23"
+            },
+            "inactive": false
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Group/argo-pl-group-all-20200923212135189367"
+      }
+    },
+    {
+      "fullUrl": "http://test.fhir.org/r4/argo-pl-group-all-20200923212135191298",
+      "resource": {
+        "resourceType": "Group",
+        "id": "argo-pl-group-all-20200923212135191298",
+        "meta": {
+          "source": "Health_eData_Inc",
+          "tag": [
+            {
+              "code": "2020-Sep"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://example.org/fhir/identifiers",
+            "value": "argo-pl-group-all-20200923212135191298"
+          }
+        ],
+        "active": true,
+        "type": "person",
+        "actual": true,
+        "name": "Argo Patient List \"all\" Use Case",
+        "managingEntity": {
+          "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
+          "display": "HOLY FAMILY HOSPITAL"
+        },
+        "member": [
+          {
+            "entity": {
+              "reference": "Patient/06e1f0dd-5fbe-4480-9bb4-6b54ec02d31b",
+              "display": "Mr. Elden718 Halvorson124"
+            },
+            "period": {
+              "start": "2020-09-23"
+            },
+            "inactive": false
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Group/argo-pl-group-all-20200923212135191298"
+      }
+    },
+    {
+      "fullUrl": "http://test.fhir.org/r4/argo-pl-group-all-20200923212135194891",
+      "resource": {
+        "resourceType": "Group",
+        "id": "argo-pl-group-all-20200923212135194891",
+        "meta": {
+          "source": "Health_eData_Inc",
+          "tag": [
+            {
+              "code": "2020-Sep"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://example.org/fhir/identifiers",
+            "value": "argo-pl-group-all-20200923212135194891"
+          }
+        ],
+        "active": true,
+        "type": "person",
+        "actual": true,
+        "name": "Argo Patient List \"all\" Use Case",
+        "managingEntity": {
+          "reference": "Organization/db0acede-4abe-3c01-8d03-5c68a190d8c7",
+          "display": "SOUTH SHORE HOSPITAL"
+        },
+        "member": [
+          {
+            "entity": {
+              "reference": "Patient/aad0894e-47f4-4ffc-8fab-8fe5487110d2",
+              "display": "Ms. Jama227 Corwin846"
+            },
+            "period": {
+              "start": "2020-09-23"
+            },
+            "inactive": false
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Group/argo-pl-group-all-20200923212135194891"
+      }
+    }
+  ]
+}
