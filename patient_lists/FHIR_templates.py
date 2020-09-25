@@ -65,7 +65,7 @@ qr_template = {
       }
     ]
   },
-  "questionnaire": "http://registry.fhir.org/argonaut/Questionniare/argo-pl-q1",
+  "questionnaire": "http://registry.fhir.org/argonaut/Questionnaire/argo-pl-q1",
   "status": "completed",
   "subject": {
     "reference": "Patient/12345",
