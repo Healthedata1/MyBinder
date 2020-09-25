@@ -94,7 +94,21 @@ def load_transaction(pyfhir_data):
       # profile = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' # The official URL for this profile is: http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
         )  
     r = post(f'{test_server}', params = params, headers = headers, data = to_json(pyfhir_data))
-    return r   
+    return r 
+
+def fetch_r(type, id):
+    '''Fetch resource and return dict'''
+    #test_server = 'http://test.fhir.org/r4'
+    test_server = 'http://hapi.fhir.org/baseR4'  
+    display(HTML(f'&#9203...GETting {type} resource with id = {id} from {test_server}... ')) 
+    params = dict(
+      # profile = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' # The official URL for this profile is: http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
+        )  
+    r = get(f'{test_server}/{type}/{id}', params = params, headers = headers)
+    if r.status_code < 300:
+        return r.json()
+    else:
+        display(HTML(f'{r.status_code}...{test_server}/{type}/{id} not found... '))
 
 
 # In[43]:

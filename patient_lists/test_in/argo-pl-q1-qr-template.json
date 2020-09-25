@@ -1,0 +1,59 @@
+template = {
+  "resourceType": "QuestionnaireResponse",
+  "meta": {
+    "source": "Health_eData_Inc",
+    "tag": [
+      {
+        "code": "2020-Sep"
+      },
+      {
+        "code": "lformsVersion: 25.1.2"
+      }
+    ]
+  },
+  "questionnaire": "http://registry.fhir.org/argonaut/Questionniare/argo-pl-q1",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/12345",
+    "display": "Patient Name"
+  },
+  "authored": "2020-09-25T00:11:54.322Z",
+  "item": [
+    {
+      "linkId": "dob",
+      "text": "DOB",
+      "answer": [
+        {
+          "valueString": "6/19/1964"
+        }
+      ]
+    },
+    {
+      "linkId": "sex",
+      "text": "Sex",
+      "answer": [
+        {
+          "valueString": "M"
+        }
+      ]
+    },
+    {
+      "linkId": "admit-date",
+      "text": "Admission Datejson",
+      "answer": [
+        {
+          "valueString": "09/24/2020"
+        }
+      ]
+    },
+    {
+      "linkId": "rel-encounter",
+      "text": "Related Encounter",
+      "answer": [
+        {
+          "valueString": "1234"
+        }
+      ]
+    }
+  ]
+}
