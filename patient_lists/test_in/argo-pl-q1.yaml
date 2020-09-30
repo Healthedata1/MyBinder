@@ -97,10 +97,44 @@ item:
           expression: Encounter.id
           description: id of the related Encounter
     required: false
-    linkId: rel-encounter
+    linkId: rel-encounter-id
     definition: http://hl7.org/fhir/StructureDefinition/Encounter#id
-    text: Related Encounter
+    text: Related Encounter (e.g. admission Enounter) as id only
     prefix: '4.'
     readOnly: false
     initial:
       - valueString: N/A
+  - type: reference
+    code:
+      - code: 75519-9
+        display: Related Encounter
+    extension:
+      - url: 'http://hl7.org/fhir/StructureDefinition/variable'
+        valueExpression:
+          language: text/CQL
+          name: rel-encounter
+          expression: '[CQL for the admission Encounter]'
+          description: reference to the related Encounter
+    required: false
+    linkId: rel-encounter-ref
+    definition: http://hl7.org/fhir/StructureDefinition/Encounter
+    text: Related Encounter (e.g. admission Enounter) as FHIR reference
+    prefix: '5.'
+    readOnly: false
+  - type: url
+    code:
+      - code: 75519-9
+        display: Related Encounter
+    extension:
+      - url: 'http://hl7.org/fhir/StructureDefinition/variable'
+        valueExpression:
+          language: text/CQL
+          name: rel-encounter
+          expression: '[CQL for the admission Encounter uri]'
+          description: reference to the related Encounter uri
+    required: false
+    linkId: rel-encounter-uri
+    definition: http://hl7.org/fhir/StructureDefinition/Encounter
+    text: Related Encounter (e.g. admission Enounter) as uri
+    prefix: '6.'
+    readOnly: false

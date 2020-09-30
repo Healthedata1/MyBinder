@@ -26,7 +26,17 @@ item:
     text: Admission Datejson
     answer:
       - valueString: 09/24/2020
-  - linkId: rel-encounter
-    text: Related Encounter
+  - linkId: rel-encounter-id
+    text: elated Encounter (e.g. admission Enounter) as id only
     answer:
       - valueString: '1234'
+  - linkId: rel-encounter-ref
+    text: Related Encounter (e.g. admission Enounter) as FHIR reference
+    answer:
+      - valueReference:
+          reference: 'Encounter/foo'
+          display: 'Related Encounter (e.g. admission Enounter) as FHIR reference'
+  - linkId: rel-encounter-uri
+    text: Related Encounter (e.g. admission Encounter) as uri
+    answer:
+      - valueUri: 'http://example.org/data/1234'

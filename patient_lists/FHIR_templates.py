@@ -65,7 +65,7 @@ qr_template = {
       }
     ]
   },
-  "questionnaire": "http://registry.fhir.org/argonaut/Questionnaire/argo-pl-q1",
+  "questionnaire": "http://registry.fhir.org/argonaut/Questionniare/argo-pl-q1",
   "status": "completed",
   "subject": {
     "reference": "Patient/12345",
@@ -78,7 +78,7 @@ qr_template = {
       "text": "DOB",
       "answer": [
         {
-          "valueString": "06/19/1964"
+          "valueString": "6/19/1964"
         }
       ]
     },
@@ -93,7 +93,7 @@ qr_template = {
     },
     {
       "linkId": "admit-date",
-      "text": "Admission Date",
+      "text": "Admission Datejson",
       "answer": [
         {
           "valueString": "09/24/2020"
@@ -101,11 +101,32 @@ qr_template = {
       ]
     },
     {
-      "linkId": "rel-encounter",
-      "text": "Related Encounter",
+      "linkId": "rel-encounter-id",
+      "text": "elated Encounter (e.g. admission Enounter) as id only",
       "answer": [
         {
           "valueString": "1234"
+        }
+      ]
+    },
+    {
+      "linkId": "rel-encounter-ref",
+      "text": "Related Encounter (e.g. admission Enounter) as FHIR reference",
+      "answer": [
+        {
+          "valueReference": {
+            "reference": "Encounter/foo",
+            "display": "Related Encounter (e.g. admission Enounter) as FHIR reference"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "rel-encounter-uri",
+      "text": "Related Encounter (e.g. admission Encounter) as uri",
+      "answer": [
+        {
+          "valueUri": "http://example.org/data/1234"
         }
       ]
     }
